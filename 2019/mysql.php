@@ -48,6 +48,18 @@
 //b and c，都不生效
 //a and b > 5 and c,a和b生效，c不生效。
 
+//9.TINYINT(M)中M表示的含义是什么, 比如TINYINT(1)
+//  比如TINYINT(1)和TINYINT(2)没有区别
+// 如果设置zerofill(左前位置零填充), 对于TINYINT(1)和TINYINT(2), 
+// 如果存入1, TINYINT(1)存入的是1, 而TINYINT(2)存入的是01
+//也就是说,没有zerofill,M值是没用的
+
+//10.mysql中int、bigint、smallint 和 tinyint长度范围和区别
+
+//tinyint:带符号的范围是-128到127。无符号的范围是0到255。
+//smallint:带符号的范围是-32768到32767。无符号的范围是0到65535。
+//bigint:带符号的范围是-8388608到8388607。无符号的范围是0到16777215。
+//int:带符号的范围是-2147483648到2147483647。无符号的范围是0到4294967295。
 
 
 

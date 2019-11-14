@@ -420,18 +420,73 @@
 
 
 
+//写一个函数, 统计一个字符串中另一个字符串出现的次数?
+// function getSubInParentCount($subStr, $parentStr)
+// {
+//     $arr = explode($subStr, $parentStr);
+//     return count($arr) - 1;
+// }
+
+// // 测试
+// $parentStr = '1234abcabc123abcdef1234';
+// $subStr = 'abc';
+// // 3
+// echo getSubInParentCount($subStr, $parentStr);
+// 或者
+// echo substr_count($parentStr, $subStr);//php自带函数
+
+//写一个函数将字符串'make_by_id'装换成'MakeById'?
+//ucfirst() explode() implode()
+// function convertStr($str)
+// {
+//     $arr = explode('_', $str);
+//     foreach ($arr as $k => $v) {
+//         $arr[$k] = ucfirst($v);
+//     }
+//     return implode('', $arr);
+// }
+
+// $str = 'make_by_id';
+// echo convertStr($str);
+
+
+//合并数组的方式有哪几种?
+//array_meger() +
+//array_meger() 相同的数组索引保留前面的值 相同的字符串索引保留后面的值
+//+ 不管是什么索引都保留前面的值
 
 
 
+//给出多种方法反转字符串
+//答：
+//#1
+//strrev($str) 
+//#2//不支持中文
+// function rev2($str)
+// {
+//     $len = strlen($str);
+//     $res = '';
+//     while ($len) {
+//         $res .= $str[--$len];
+//     }
+//     return $res;
+// }
+// echo rev2($a);
+//#3
+// function rev3($str)
+// {
+//     $res = '';
+//     if (strlen($str) > 0) {
+//         $res = rev3(mb_substr($str, 1));
+//     }
+//     return $res . mb_substr($str, 0, 1);
+// }
+// echo rev3($a);
 
 
-
-
-
-
-
-
-
+// 什么是面向对象?
+// 面向对象是把解决的问题按照一定规则划分成一个或多个对象, 然后通过调用对象的方法来解决问题
+// 面向过程是把解决的问题划分成几个步骤, 然后用函数将这些步骤一一实现, 使用的时候调用函数
 
 
 
