@@ -136,6 +136,7 @@
 //答：
 //1.简单轮训 2.最小链接 3.加权随机法 4.源地址hash 5.随机算法 6.加权轮询
 
+
 //22.控制反转，依赖注入
 //答：
 //依赖注入是从应用程序的角度在描述，应用程序依赖容器创建并注入它所需要的外部资源；而控制反转是从容器的角度在描述，容器控制应用程序，由容器反向的向应用程序注入应用程序所需要的外部资源。
@@ -161,12 +162,12 @@
 //空
 
 //27.
-//$val1= 5;
+// $val1= 5;
 // $val2 = 10;
 // function foo(&$my_val){
 //     global $val1;
-//     $val1+=2;//7
-//     $val2 =4;//4
+//     $val1 += 2;//7
+//     $val2 = 4;//4
 //     $my_val +=3;//8
 //     return $val2;//4
 // }
@@ -250,19 +251,20 @@
 // 	}
 // 	return -1;
 // }
+
 // //快排
 // function quick_sort($arr)
 // {	
-// 	if(count($arr)<=1)
-// 	{
+// 	 if(count($arr)<=1)
+// 	 {
 // 		return $arr;
-// 	}
-// 	$key = array_shift($arr);
-// 	$key_arr = array($key);
-// 	$left_arr = array();
-// 	$right_arr = array();
-// 	foreach($arr as $value)
-// 	{
+// 	 }
+// 	 $key = array_shift($arr);
+// 	 $key_arr = array($key);
+// 	 $left_arr = array();
+// 	 $right_arr = array();
+// 	 foreach($arr as $value)
+// 	 {
 // 		if($value < $key)
 // 		{
 // 			$left_arr[] = $value;
@@ -270,9 +272,10 @@
 // 		{
 // 			$right_arr[] = $value;
 // 		}
-// 	}
-// 	return array_merge(quick_sort($left_arr),$key_arr,quick_sort($right_arr));
+// 	 }
+// 	 return array_merge(quick_sort($left_arr),$key_arr,quick_sort($right_arr));
 // }
+
 // //创建多级目录
 // function create_dir($path,$mode=0777)
 // {
@@ -290,6 +293,8 @@
 // 		}
 // 	}
 // }
+
+
 // // 单例
 // //定义单例的数据库操作类
 // class Db{
